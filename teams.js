@@ -3,7 +3,7 @@
 const teams = [
   { name: "Team Alpha",   slogan: "Tech Titans",              members: 3 },
   { name: "Team Phoenix", slogan: "CodeMates",                members: 3 },
-  { name: "Team VorteX",  slogan: "Dream. Build. Deploy.",    members: 3 },
+  { name: "Team Vortex",  slogan: "Dream. Build. Deploy.",    members: 3 },
   { name: "Team Nebula",  slogan: "Orbiting Ideas",           members: 3 },
   { name: "Team Zenith",  slogan: "Higher Together",          members: 3 },
   { name: "Team Quasar",  slogan: "Small Steps. Big Impact.", members: 3 },
