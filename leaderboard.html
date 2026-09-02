@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SDC - Hackathon 2026 Leaderboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar">
+    <div class="logo-box">
+      <div class="logo-icon">&lt;/&gt;</div>
+      <div class="logo-text">
+        <div class="logo-name">Software Development Club</div>
+        <div class="logo-sub">VIT Bhopal</div>
+      </div>
+    </div>
+
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="events.html">Events</a>
+      <a href="leaderboard.html" class="active">Leaderboard</a>
+      <a href="teams.html">Teams</a>
+      <a href="about.html">About</a>
+    </nav>
+
+    <div class="nav-right">
+      <span class="theme-icon">&#9728;</span>
+      <button class="join-btn">Join SDC</button>
+    </div>
+  </header>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero">
+    <div class="hero-left">
+      <span class="badge">&#127942; HACKATHON 2026</span>
+      <h1>Hackathon 2026</h1>
+      <h1 class="highlight">Live Leaderboard</h1>
+      <p class="tagline">Build. Solve. Compete.</p>
+      <p class="subtext">Real problems. Creative minds. Amazing solutions.</p>
+    </div>
+    <div class="hero-right">
+      <div class="trophy">&#127942;</div>
+    </div>
+  </section>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main class="content">
+
+    <!-- LEFT: LEADERBOARD -->
+    <section class="leaderboard">
+
+      <div class="filter-bar">
+        <div class="tabs">
+          <button class="tab active" data-filter="Overall">Overall</button>
+          <button class="tab" data-filter="Beginner">Beginner</button>
+          <button class="tab" data-filter="Intermediate">Intermediate</button>
+          <button class="tab" data-filter="Advanced">Advanced</button>
+        </div>
+        <input type="text" id="searchInput" class="search-box" placeholder="Search team...">
+      </div>
+
+      <table class="team-table">
+        <thead>
+          <tr>
+            <th>Rank</th>
+            <th>Team</th>
+            <th>Members</th>
+            <th class="points-col">Points</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody">
+          <!-- Rows are inserted here by JavaScript -->
+        </tbody>
+      </table>
+
+    </section>
+
+    <!-- RIGHT: SIDEBAR -->
+    <aside class="sidebar">
+
+      <div class="card">
+        <div class="card-title">
+          <span class="card-icon">&lt;/&gt;</span>
+          <h3>Hackathon 2026</h3>
+        </div>
+        <p>&#128101; 12 Teams</p>
+        <p>&#128260; Live Results</p>
+        <hr>
+        <p>Ends In</p>
+        <h2 id="countdown">2d 14h 32m</h2>
+        <div class="progress-bar"><div class="progress-fill"></div></div>
+      </div>
+
+      <div class="card">
+        <h3>&#127942; Top 3 Teams</h3>
+        <ol id="topThree" class="top-three-list"></ol>
+      </div>
+
+      <div class="card cta-card">
+        <div class="rocket">&#128640;</div>
+        <h3>Keep Pushing!</h3>
+        <p>Great things are built one commit at a time.</p>
+        <button class="view-btn">View All Teams &rarr;</button>
+      </div>
+
+    </aside>
+
+  </main>
+
+  <script src="leaderboard.js"></script>
+</body>
+</html>
